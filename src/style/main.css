@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "manrope";
+  src: url("../../../assets/fonts/Manrope.ttf") format("truetype");
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  color: hsl(193, 38%, 86%);
+  overflow-anchor: none;
+  font-family: "manrope", sans-serif;
+}
+body {
+  background-color: hsl(218, 23%, 16%);
+}
