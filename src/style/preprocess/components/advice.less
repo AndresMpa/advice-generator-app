@@ -1,0 +1,84 @@
+@import "../basic/color";
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+}
+
+.advice {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 550px;
+  min-width: 550px;
+
+  background: @canvas;
+  border-radius: 15px;
+
+  .advice--title {
+    margin: 35px auto 15px;
+
+    color: @label;
+
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 3px;
+
+    * {
+      color: @label;
+    }
+  }
+
+  .advice--message {
+    padding: 15px;
+    margin: 10px;
+
+    color: @letter;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+
+    &:after,
+    &:before {
+      content: '"';
+    }
+  }
+
+  .advice--image {
+    display: flex;
+    margin: 10px auto;
+  }
+
+  .advice--button {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    top: 32px;
+
+    .advice--button--wrapper {
+      border-radius: 50%;
+      padding: 15px;
+
+      background-color: @label;
+
+      transition: 0.3s;
+
+      &:hover {
+        -webkit-box-shadow: 0px 0px 15px 5px @label;
+        box-shadow: 0px 0px 15px 5px @label;
+
+        cursor: pointer;
+      }
+
+      .advice--button--image {
+        width: 23px;
+      }
+    }
+  }
+}
