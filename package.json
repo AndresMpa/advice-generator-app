@@ -1,0 +1,22 @@
+{
+  "name": "advice-generator-app",
+  "version": "1.0.0",
+  "description": "A simple app from frontend mentor",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "style": "npx lessc src/style/preprocess/main.less src/style/main.css",
+    "dev": "npx live-server"
+  },
+  "keywords": [
+    "frontend-mentor"
+  ],
+  "author": "AndresMpa",
+  "license": "MIT",
+  "devDependencies": {
+    "less": "^4.2.0",
+    "live-server": "^1.2.2"
+  }
+}
