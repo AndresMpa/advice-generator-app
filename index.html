@@ -16,29 +16,28 @@
   <body>
     <main class="app">
       <article class="advice">
-        <h3 class="advice--title">ADVICE #<span id="adviceId">000</span></h3>
-        <p class="advice--message" id="advice">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
-          distinctio ipsum dignissimos, voluptatem molestiae nihil, sit
-          voluptatibus esse exercitationem consectetur ratione maiores eos.
-          Alias cupiditate quo, sint veniam iure nulla!
-        </p>
+        <h3 class="advice--title">ADVICE #<span id="adviceId"></span></h3>
+        <blockquote class="advice--message" id="advice"></blockquote>
 
         <figure class="advice--image">
           <img
             src="./src/assets/images/pattern-divider-desktop.svg"
             alt="divider"
+            id="divider"
           />
         </figure>
 
-        <figure class="advice--button">
-          <img
-            src="./src/assets/images/icon-dice.svg"
-            class="advice--button--image"
-            alt="Dice"
-          />
-        </figure>
+        <div class="advice--button">
+          <figure class="advice--button--wrapper" id="button">
+            <img
+              src="./src/assets/images/icon-dice.svg"
+              class="advice--button--image"
+              alt="Dice"
+            />
+          </figure>
+        </div>
       </article>
     </main>
+    <script src="./src/main.js" type="text/javascript" />
   </body>
 </html>
