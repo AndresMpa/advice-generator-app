@@ -2,39 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
-      type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      type="image/png"
+      href="src/assets/images/favicon-32x32.png"
     />
-
-    <title>Frontend Mentor | Advice generator app</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="src/style/main.css" />
+    <title>Advice generator app</title>
   </head>
   <body>
-    Advice #<!-- Advice ID goes here -->
+    <main class="app">
+      <article class="advice">
+        <h3 class="advice--title">Advice #<span id="adviceId">000</span></h3>
+        <p class="advice--message" id="advice">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+          distinctio ipsum dignissimos, voluptatem molestiae nihil, sit
+          voluptatibus esse exercitationem consectetur ratione maiores eos.
+          Alias cupiditate quo, sint veniam iure nulla!
+        </p>
 
-    "<!-- Advice text goes here -->"
+        <figure class="advice--image">
+          <img
+            src="./src/assets/images/pattern-divider-desktop.svg"
+            alt="divider"
+          />
+        </figure>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/AndresMpa">@AndresMpa</a>.
-    </div>
+        <figure class="advice--image">
+          <img src="./src/assets/images/icon-dice.svg" alt="Dice" />
+        </figure>
+      </article>
+    </main>
   </body>
 </html>
