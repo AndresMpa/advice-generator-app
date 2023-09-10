@@ -23,15 +23,21 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  width: 550px;
-  min-width: 550px;
+  width: 530px;
+  min-width: 530px;
   background: hsl(217, 19%, 24%);
   border-radius: 15px;
 }
+@media screen and (max-width: 550px) {
+  .advice {
+    width: 350px;
+    min-width: 350px;
+  }
+}
 .advice .advice--title {
-  margin: 35px auto 15px;
+  margin: 50px auto 10px;
   color: hsl(150, 100%, 66%);
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
   letter-spacing: 3px;
 }
@@ -42,7 +48,7 @@ body {
   padding: 15px;
   margin: 10px;
   color: hsl(193, 38%, 86%);
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
   text-align: center;
 }
@@ -53,6 +59,17 @@ body {
 .advice .advice--image {
   display: flex;
   margin: 10px auto;
+}
+.advice .advice--image > *:nth-child(2n) {
+  display: none;
+}
+@media screen and (max-width: 550px) {
+  .advice .advice--image > *:nth-child(2n) {
+    display: block;
+  }
+  .advice .advice--image > *:nth-child(2n+1) {
+    display: none;
+  }
 }
 .advice .advice--button {
   display: flex;
@@ -72,5 +89,5 @@ body {
   cursor: pointer;
 }
 .advice .advice--button .advice--button--wrapper .advice--button--image {
-  width: 23px;
+  width: 20px;
 }

@@ -14,18 +14,25 @@
   flex-direction: column;
   justify-content: center;
 
-  width: 550px;
-  min-width: 550px;
+  width: 530px;
+  min-width: 530px;
 
   background: @canvas;
   border-radius: 15px;
 
+  & {
+    @media screen and (max-width: 550px) {
+      width: 350px;
+      min-width: 350px;
+    }
+  }
+
   .advice--title {
-    margin: 35px auto 15px;
+    margin: 50px auto 10px;
 
     color: @label;
 
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
     letter-spacing: 3px;
 
@@ -39,7 +46,7 @@
     margin: 10px;
 
     color: @letter;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     text-align: center;
 
@@ -52,6 +59,21 @@
   .advice--image {
     display: flex;
     margin: 10px auto;
+    & > *:nth-child(2n) {
+      display: none;
+    }
+
+    & {
+      @media screen and (max-width: 550px) {
+
+    & > *:nth-child(2n) {
+      display: block;
+    }
+        & > *:nth-child(2n+1) {
+          display: none;
+        }
+      }
+    }
   }
 
   .advice--button {
@@ -77,7 +99,7 @@
       }
 
       .advice--button--image {
-        width: 23px;
+        width: 20px;
       }
     }
   }
